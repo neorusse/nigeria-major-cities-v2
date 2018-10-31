@@ -20,6 +20,10 @@ $font-stack-heading: Arial, Helvetica, sans-serif;
   padding: 10px 15px;
 }
 
+@mixin flex {
+  display: flex;
+}
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -88,7 +92,7 @@ p {
   padding: 10px 0px;
 }
 
-.img-slides {
+.banner__img-slides {
   padding: 10px 20px;
 }
 
