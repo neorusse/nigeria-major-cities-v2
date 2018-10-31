@@ -193,3 +193,33 @@ blockquote:before {
     font-size: 17px;
   }
 }
+
+/* ---- Tablet Styles ---- */
+
+@media screen and (min-width: 641px) {
+  .main-nav {
+    @include flex;
+  }
+
+  .main-content {
+    @include flex;
+  }
+
+  .flex-header-wrapper {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  .flex-main-wrapper {
+    @include flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
