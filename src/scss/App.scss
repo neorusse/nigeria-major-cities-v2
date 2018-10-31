@@ -125,3 +125,42 @@ p {
     color: $color-styling;
   }
 }
+
+/* ---- Main Content Section ---- */
+
+blockquote {
+  background: lighten($color-base, 68%);
+  border-left: 5px solid lighten($color-base, 30%);
+  margin: 1.5em 10px 0;
+  padding: 0.5em 20px 0;
+}
+
+blockquote:before {
+  color: $color-base;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.feat-img {
+  width: 100%;
+}
+
+.button {
+  margin-top: auto;
+  align-self: flex-start;
+  color: $white;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  background: $color-styling;
+  border-radius: 0.35em;
+}
+
+/* ---- Footer Section ---- */
+
+.main-footer {
+  color: $white;
+  background-color: $color-styling;
+}
