@@ -2,7 +2,7 @@
   "name": "naija-cites-v2",
   "version": "1.0.0",
   "description": "A Single Page Web App Showcasing Naija Major Cities",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "formart": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
     "lint": "eslint **/*.{js,jsx}",
