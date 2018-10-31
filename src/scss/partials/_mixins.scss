@@ -1,0 +1,16 @@
+// Mixins =================================
+
+@mixin style-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin item-positioning {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+@mixin flex {
+  display: flex;
+}

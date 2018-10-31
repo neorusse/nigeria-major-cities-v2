@@ -12,37 +12,35 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: $font-stack-base;
   font-size: 18px;
-  color: #414042;
+  color: $color-base;
   line-height: 1.5;
   border: 0;
-  margin: 0;
-  padding: 0;
+  @include style-reset;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-stack-heading;
   font-weight: bold;
-  color: #414042;
+  color: $color-base;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  @include style-reset;
   list-style: none;
 }
 
 a {
-  color: green;
+  color: $color-styling;
   font-weight: bold;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-  color: #414042;
+  &:hover {
+    text-decoration: none;
+    color: $color-base;
+  }
 }
 
 img {
@@ -56,7 +54,9 @@ p {
 /* ================================= 
         Base Layout Styles
       ==================================== */
+
 /* ---- Layout Containers ---- */
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -81,42 +81,40 @@ p {
 }
 
 /* ---- Navigation Section ---- */
+
 .site-logo {
   font-size: 1.25em;
   margin: 0;
-}
-.site-logo a {
-  text-align: center;
-  display: block;
-  padding: 10px 15px;
+  a {
+    @include item-positioning;
+  }
 }
 
 .main-nav {
   margin-top: 5px;
-}
-.main-nav__item {
-  text-align: center;
-  display: block;
-  padding: 10px 15px;
-}
-.main-nav a {
-  font-size: 1.1em;
-  color: #414042;
-}
-.main-nav a:hover {
-  color: green;
+  &__item {
+    @include item-positioning;
+  }
+  a {
+    font-size: 1.1em;
+    color: $color-base;
+  }
+  a:hover {
+    color: $color-styling;
+  }
 }
 
 /* ---- Main Content Section ---- */
+
 blockquote {
-  background: #eeeeef;
-  border-left: 5px solid #8e8c8f;
+  background: lighten($color-base, 68%);
+  border-left: 5px solid lighten($color-base, 30%);
   margin: 1.5em 10px 0;
   padding: 0.5em 20px 0;
 }
 
 blockquote:before {
-  color: #414042;
+  color: $color-base;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -131,23 +129,26 @@ blockquote:before {
 .button {
   margin-top: auto;
   align-self: flex-start;
-  color: #fff;
+  color: $white;
   text-align: center;
   padding: 0.5em 0.5em;
-  background: green;
+  background: $color-styling;
   border-radius: 0.35em;
 }
 
 /* ---- Footer Section ---- */
+
 .main-footer {
-  color: #fff;
-  background-color: green;
+  color: $white;
+  background-color: $color-styling;
 }
 
 /* ================================= 
           Media Queries
         ==================================== */
+
 /* ---- Mobile Styles ---- */
+
 @media screen and (max-width: 500px) {
   .container {
     width: 95%;
@@ -170,23 +171,25 @@ blockquote:before {
     font-size: 17px;
   }
 }
+
 /* ---- Tablet Styles ---- */
+
 @media screen and (min-width: 641px) {
   .main-nav {
-    display: flex;
+    @include flex;
   }
 
   .main-content {
-    display: flex;
+    @include flex;
   }
 
   .flex-header-wrapper {
-    display: flex;
+    @include flex;
     justify-content: space-between;
   }
 
   .flex-main-wrapper {
-    display: flex;
+    @include flex;
     flex-wrap: wrap;
   }
 
@@ -198,15 +201,16 @@ blockquote:before {
     text-align: center;
   }
 }
+
 /* ---- Desktop Styles ---- */
+
 @media screen and (min-width: 960px) {
   body {
     padding-top: 75px;
   }
-
   .main-header {
     position: fixed;
-    background: #fff;
+    background: $white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     width: 100%;
     top: 0;
