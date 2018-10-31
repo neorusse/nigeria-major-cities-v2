@@ -164,3 +164,32 @@ blockquote:before {
   color: $white;
   background-color: $color-styling;
 }
+
+/* ================================= 
+        Media Queries
+      ==================================== */
+
+/* ---- Mobile Styles ---- */
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .site-logo {
+    font-size: 1.1em;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
