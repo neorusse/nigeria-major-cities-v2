@@ -4,6 +4,8 @@
   "description": "A Single Page Web App Showcasing Naija Major Cities",
   "main": "index.js",
   "scripts": {
+    "formart": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
+    "lint": "eslint **/*.{js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Russell Nyorere",
