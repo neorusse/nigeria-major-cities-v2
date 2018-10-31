@@ -1,0 +1,15 @@
+{
+  "name": "naija-cites-v2",
+  "version": "1.0.0",
+  "description": "A Single Page Web App Showcasing Naija Major Cities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Nyorere",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
