@@ -7,6 +7,13 @@ $white: #fff;
 $font-stack-base: Georgia, "Times New Roman", Times, serif;
 $font-stack-heading: Arial, Helvetica, sans-serif;
 
+// Mixins =================================
+
+@mixin style-reset {
+  margin: 0;
+  padding: 0;
+}
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -58,4 +65,33 @@ img {
 
 p {
   text-align: justify;
+}
+
+/* ================================= 
+      Base Layout Styles
+    ==================================== */
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 10px 0px;
+}
+
+.img-slides {
+  padding: 10px 20px;
+}
+
+.col {
+  padding: 0 1em;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 30px;
 }
