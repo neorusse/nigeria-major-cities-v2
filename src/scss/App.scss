@@ -14,6 +14,12 @@ $font-stack-heading: Arial, Helvetica, sans-serif;
   padding: 0;
 }
 
+@mixin item-positioning {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -94,4 +100,28 @@ p {
   text-align: center;
   padding: 2em 0;
   margin-top: 30px;
+}
+
+/* ---- Navigation Section ---- */
+
+.site-logo {
+  font-size: 1.25em;
+  margin: 0;
+  a {
+    @include item-positioning;
+  }
+}
+
+.main-nav {
+  margin-top: 5px;
+  &__item {
+    @include item-positioning;
+  }
+  a {
+    font-size: 1.1em;
+    color: $color-base;
+  }
+  a:hover {
+    color: $color-styling;
+  }
 }
