@@ -1,0 +1,214 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #414042;
+  line-height: 1.5;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #414042;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #414042;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ================================= 
+      Base Layout Styles
+    ==================================== */
+/* ---- Layout Containers ---- */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 10px 0px;
+}
+
+.banner__img-slides {
+  padding: 10px 20px;
+}
+
+.col {
+  padding: 0 1em;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Navigation Section ---- */
+.site-logo {
+  font-size: 1.25em;
+  margin: 0;
+}
+.site-logo a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+.main-nav__item {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: 1.1em;
+  color: #414042;
+}
+.main-nav a:hover {
+  color: green;
+}
+
+/* ---- Main Content Section ---- */
+blockquote {
+  background: #eeeeef;
+  border-left: 5px solid #8e8c8f;
+  margin: 1.5em 10px 0;
+  padding: 0.5em 20px 0;
+}
+
+blockquote:before {
+  color: #414042;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.feat-img {
+  width: 100%;
+}
+
+.button {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  background: green;
+  border-radius: 0.35em;
+}
+
+/* ---- Footer Section ---- */
+.main-footer {
+  color: #fff;
+  background-color: green;
+}
+
+/* ================================= 
+        Media Queries
+      ==================================== */
+/* ---- Mobile Styles ---- */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .site-logo {
+    font-size: 1.1em;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+/* ---- Tablet Styles ---- */
+@media screen and (min-width: 641px) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .flex-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+/* ---- Desktop Styles ---- */
+@media screen and (min-width: 960px) {
+  body {
+    padding-top: 75px;
+  }
+
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+  }
+}
