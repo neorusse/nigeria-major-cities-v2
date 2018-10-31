@@ -33,3 +33,24 @@ export const locations = [
         moreInfo: "Kano_State"
     }
 ];
+
+// Create a 'Data' component that renders a Each City
+
+const Data = (props) => {
+    return (<div className="col">
+        
+    </div>);
+}; 
+
+ // Parent Component 
+ 
+ const EachLocation = (props) => {
+    return (
+      <div className="flex-main-wrapper">
+      
+      </div>
+    );
+  }
+
+  // 3: Render the container component to the DOM
+  render( <EachLocation/>, document.getElementById('root'));
